@@ -1,6 +1,6 @@
 #!groovy
 
-@Library('nya')
+@Library('nya@git_co')
 import se.uhr.nya.build.Git
 
 
