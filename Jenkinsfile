@@ -6,10 +6,10 @@ import se.uhr.nya.build.Git
 
 node() {
     stage('scm') {
-        def checkoutInfo = checkout scm
+        def git = new Git()
+        nya = git.checkout path: 'repos/nya'
 
-        echo "----" + checkoutInfo
-
+        echo nya.commitId()
         sh "ls -l repos/nya"
     }
 }
