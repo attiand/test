@@ -2,7 +2,7 @@
 
 node() {
     stage('scm') {
-        def co = checkout changelog: true, scm
+        def co = checkout scm
         echo "checkout info: " + co       
     }
 }
